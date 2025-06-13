@@ -8,11 +8,11 @@ const client = new PrismaClient();
 
 const app = express();
 app.use(express.json());
-app.get("/"), async (_req, res)=>{
+app.get("/", async (_req, res)=>{
 
     return res.send(`<h1>Welcome To Our Page</h1>`)  
   
-}
+});
 
 app.get("/task", async (_req, res) => {
   try {
